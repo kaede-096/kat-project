@@ -1,0 +1,96 @@
+ * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url(background1.mp4);
+      min-height: 100vh;
+      background-size: cover;
+      margin: 0;
+      padding: 40px;
+      font-size: xx-large;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transform-origin: center;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      color: hsla(293, 12%, 62%, 0.952);
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+    }
+
+    h1 {
+      color: hsl(0, 59%, 93%);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h2 {
+      color: hsl(0, 0%, 3%);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h3 {
+      color: hsl(0, 0%, 1%);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    
+    .slideshow {
+      position: relative;
+      width: 600px;
+      height: 400px;
+      overflow: hidden;
+      margin: auto; 
+    }
+
+    
+    .slides {
+      display: flex;
+      width: 300%; 
+      animation: slide 12s infinite; 
+    }
+
+  
+    .slides img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;       
+      object-position: center;
+    }
+
+ 
+    @keyframes slide {
+      0%   { transform: translateX(0); }
+      33%  { transform: translateX(-100%); }
+      66%  { transform: translateX(-200%); }
+      100% { transform: translateX(0); }
+    }
+ .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+.content {
+            position: relative;
+            z-index: 1;
+            color: hsl(0, 0%, 100%);
+            text-align: center;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }

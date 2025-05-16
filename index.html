@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colorful Stage</title>
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+   <h1>Project Sekai</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="about game.html">ABOUT GAME</a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="characters.html">CHARACTERS</a></li>
+        <li><a href="sekai.html">SEKAI</a></li>
+        <li><a href="media.html">MEDIA</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+      </ul>
+    </nav>
+
+    <video class="video-background" autoplay muted loop>
+      <source src="background.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="video-slider">
+      
+      <div class="video-container left active">
+        <video class="slide-video" controls>
+          <source src="trailer.mp4" type="video/mp4">
+        </video>
+      </div>
+      
+      <div class="video-container center">
+        <video class="slide-video" controls>
+          <source src="Official Group Intro Trailer.mp4" type="video/mp4">
+        </video>
+      </div>
+      
+      <div class="video-container right">
+        <video class="slide-video" controls>
+          <source src="＂COLORFUL STAGE! The Movie： A Miku Who Can't Sing＂ Global Release Coming Soon.mp4" type="video/mp4">
+        </video>
+      </div>
+      
+      <div class="arrow left" onclick="prevVideo()">&#8592;</div>
+      <div class="arrow right" onclick="nextVideo()">&#8594;</div>
+    </div>
+
+    <div class="content">
+      <h1>“Welcome to SEKAI!”</h1>
+      <p>FIND YOUR MUSIC</p>
+    </div>
+    <script src="slide.js"></script>
+  </main>
+</body>
+</html>
